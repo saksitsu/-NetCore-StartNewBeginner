@@ -1,0 +1,36 @@
+﻿@model SAKSIT.Models.customer
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>customer</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.firstname)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.firstname)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.lastname)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.lastname)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.address)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.address)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.customer_id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
